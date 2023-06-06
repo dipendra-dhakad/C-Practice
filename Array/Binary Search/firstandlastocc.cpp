@@ -62,3 +62,5 @@ int main(){
     cout<< " The last  occurence of 3 at index " << lastOcc(arr,5,3) << endl;
     return 0 ;
 }
+
+
