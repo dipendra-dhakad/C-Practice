@@ -24,7 +24,7 @@ void printDuplicates(  string str){
     
 }
 int main(){
-    string str = "dipendra dhakad" ;
+    string str = "i love my school and want to go again" ;
 
     printDuplicates(str);
     return 0 ;
