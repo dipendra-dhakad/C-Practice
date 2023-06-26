@@ -7,21 +7,22 @@ void f(int i , int arr[],int n){
     f(0,arr,n);
 }
 int main(){
-    //   #ifndef ONLINE_JUDGE 
-    // freopen("input.txt","r",stdin);
-    // freopen("output.txt","w",stdout);
-    // #endif
+      #ifndef ONLINE_JUDGE 
+    freopen("input.txt","r",stdin);
+   // freopen("output.txt","w",stdout);
+    #endif
 
-    //int n;
-    //cout <<" Enter the array ";
-    //cin>>n;
+    int n;
+    cout <<" Enter the array ";
+    cin>>n;
 
-    int arr[5] ={1,2,3,4,5};
-    int n = arr[5];
-    // for (int i = 0; i < n; i++)
-    // {
-    //     cin>>arr[i];
-    // }
+    //int arr[5] ={1,2,3,4,5};
+    //int n = arr[5];
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin>>arr[i];
+    }
     f(0,arr,n);
 
     for (int i = 0; i < n; i++)
