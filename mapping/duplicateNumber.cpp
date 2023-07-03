@@ -14,6 +14,7 @@ int main(){
         cin>>arr[i];
     
     }
+  
     map<int,int>mpp;
     for (int i = 0; i < n; i++)
     {
@@ -31,7 +32,7 @@ int main(){
 
     int q;
     cin>>q;
-
+ 
     while (q--)
     {
         int number;
