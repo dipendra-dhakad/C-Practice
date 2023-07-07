@@ -26,8 +26,8 @@ int largest(int arr[],int n){
     return largest;
 }
 int main(){
-    int  arr[8] ={5,3,6,2,1,7,0,10} ;
-    int n=8;
+    int  arr[13] ={5,3,6,2,1,7,0,10 ,34,2,4,6,7} ;
+    int n=13;
     cout<<"smallest element is " <<smallest(arr,n)<<endl;
    cout << "largest element is " << largest(arr,n);
     return 0 ;
