@@ -36,8 +36,8 @@ int secondSmallest(int a[],int n){
 
 
 int main(){
-    int a[8] ={3,5,2,6,1,7,8,4};
-    int n=8;
+    int a[10] ={3,5,2,6,1,7,8,4,6,5};
+    int n=10;
      
     cout<<"Second largest element is " << secondLargest(a,n)<<endl;
     cout<< "Second smallest element is " <<secondSmallest(a,n);
