@@ -43,8 +43,8 @@ void print(int arr[],int s,int e){
     
 
 int main(){
-    int arr [11] ={2,4,6,8,12,14,16,18,20,222,242} ;
-    int size =11;
+    int arr [13] ={2,4,6,8,12,14,16,18,20,222,242,344,456} ;
+    int size =13;
     int key ;
     cout<<"Enter the element to search ";
     cin>>key;
