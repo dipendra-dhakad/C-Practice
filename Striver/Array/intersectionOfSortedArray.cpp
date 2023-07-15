@@ -66,7 +66,7 @@ void findArrayIntersection(int* arr1, int n, int* arr2, int m)
 
 int main()
 {
-    int a[11] = { 1, 4, 3, 4, 2,6,3,4,6,2 ,5};
+    int a[13] = { 1, 4, 3, 4, 2,6,3,4,6,2 ,5,7,9};
     int b[10] = { 1, 2, 3, 4, 5 ,6,8,7,9,7,};
 
     int n1 = sizeof(a) / sizeof(a[0]);
