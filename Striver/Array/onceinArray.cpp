@@ -13,7 +13,7 @@ int search_single_element(int array1[], int s1)
 
 int main()
 {
-    int array1[] = {3, 1, 5, 1, 5, 7, 9, 7, 9};
+    int array1[] = {3, 1, 5, 1, 5, 7, 9, 7, 9,8,7};
     int se;
  
     int s1 = sizeof(array1) / sizeof(array1[0]);
