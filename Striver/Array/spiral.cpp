@@ -1,47 +1,68 @@
-#include <iostream>
-#include<vector>
+#include <bits/stdc++.h>
+
 using namespace std;
 
-int spiralMatrix(int MATRIX[],int R,int C) {
-     int n =MATRIX.size();
-     int m =MATRIX[0].size();
-     int left=0,right=m-1;
-     int top=0,bottom =n-1;
-     vector<int>ans;
-     while(top<=bottom && left<=right){
-         for(int i=left;i<=right ;i++){
-             ans.push_back(MATRIX[top][i]);
-         }
-         top++;
+vector<int> printSpiral(vector<vector<int>> mat) {
+ 
+  // Define ans array to store the result.
+  vector<int> ans;
+ 
+  int n = mat.size(); // no. of nows
+  int m = mat[0].size(); // no. of columns
+  
+  // Initialize the pointers reqd for traversal.
+  int top = 0, left = 0, bottom = n - 1, right = m - 1;
 
-         for(int i =top;i<=bottom;i++){
-             ans.push_back(MATRIX[i][right]);
-         }
-         right--;
+  // Loop until all elements are not traversed.
+  while (top <= bottom && left <= right) {
+      
+    // For moving left to right
+    for (int i = left; i <= right; i++)
+      ans.push_back(mat[top][i]);
 
-         if(top<=bottom){
-             for(int i=right;i>=left;i--){
-                 ans.push_back(MATRIX[bottom][i]);
-             }
-             bottom--;
-         }
-         if(left<=right){
-             for(int i =bottom;i>=top;i--){
-                 ans.push_back(MATRIX[i][left]);
-             }
-             left++;
-         }
-     }
-     return ans;
-}
-int main(){
-    int R=0,C=0;
-    int  a[R][C] ={ {1,2,3,4,5},
-                     {16,17,18,19,6},
-                     {15,24,25,20,7},
-                     {14,23,22,21,8},
-                     {13,12,11,10,9}};
-      cout<<  spiralMatrix(R,C);
+    top++;
+
+    // For moving top to bottom.
+    for (int i = top; i <= bottom; i++)
+      ans.push_back(mat[i][right]);
+
+    right--;
     
-    return 0 ;
+    // For moving right to left.
+    if (top <= bottom) {
+      for (int i = right; i >= left; i--)
+       ans.push_back(mat[bottom][i]);
+
+      bottom--;
+    }
+
+    // For moving bottom to top.
+    if (left <= right) {
+      for (int i = bottom; i >= top; i--)
+        ans.push_back(mat[i][left]);
+
+      left++;
+    }
+  }
+  return ans;
+}
+
+int main() {
+    
+  //Matrix initialization.
+  vector<vector<int>> mat   {{1, 2, 3, 4},
+                             {5, 6, 7, 8},
+	                         {9, 10, 11, 12},
+		                     {13, 14, 15, 16}};
+		                     
+  vector<int> ans = printSpiral(mat);
+
+  for(int i = 0;i<ans.size();i++){
+      
+      cout<<ans[i]<<" ";
+  }
+  
+  cout<<endl;
+  
+  return 0;
 }
