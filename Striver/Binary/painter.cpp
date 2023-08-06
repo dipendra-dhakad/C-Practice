@@ -38,7 +38,7 @@ int findLargestMinDistance(vector<int> &boards, int k) {
 
 int main()
 {
-    vector<int> boards = {10, 20, 30, 40};
+    vector<int> boards = {10, 20, 30, 40,50};
     int k = 2;
     int ans = findLargestMinDistance(boards, k);
     cout << "The answer is: " << ans << "\n";
