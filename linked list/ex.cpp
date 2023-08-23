@@ -141,6 +141,12 @@ int main() {
     insertAtTail(tail,19);
     print(head);
 
+    insertAtTail(tail,21);
+    print(head);
+
+    insertAtTail(tail,13);
+    print(head);
+
     insertAtPosition(tail,head, 4, 22);
     print(head);    
 
