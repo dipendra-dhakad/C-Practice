@@ -305,6 +305,16 @@ int main() {
     cout << "head  " << head -> data << endl;
     cout << "tail  " << tail -> data << endl;
 
+    insertAtPosition(tail, head, 8, 103);
+    print(head);
+    cout << "head  " << head -> data << endl;
+    cout << "tail  " << tail -> data << endl;
+
+    insertAtPosition(tail, head, 9, 104);
+    print(head);
+    cout << "head  " << head -> data << endl;
+    cout << "tail  " << tail -> data << endl;
+
     deleteNode(7, head);
     print(head);
     cout << "head  " << head -> data << endl;
