@@ -147,6 +147,9 @@ int main() {
     insertAtTail(tail,13);
     print(head);
 
+     insertAtTail(tail,23);
+    print(head);
+
     insertAtPosition(tail,head, 4, 22);
     print(head);    
 
